@@ -32,7 +32,7 @@ function Game(props) {
         </button>
       ) : (
         <div className="results--container">
-          <h2> you scored {props.score / 2}/5 correct answers</h2>
+          <h2> you scored {props.score}/5 correct answers</h2>
           <button
             className="game--check-answers"
             onClick={() => props.playAnotherGame()}
