@@ -1,4 +1,5 @@
 import React from "react";
+const he = require("he");
 
 function Button(props) {
   function buttonStyle(item) {
@@ -39,7 +40,7 @@ function Button(props) {
       value={props.value}
       style={buttonStyle(props.item)}
     >
-      {props.value}
+      {he.decode(props.value)}
     </button>
   );
 }

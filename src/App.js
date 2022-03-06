@@ -21,6 +21,8 @@ function App() {
       });
   }, [isPlayingGame]);
 
+  console.log(quizData);
+
   function playAnotherGame() {
     setIsPlayingGame(false);
     setScore(0);

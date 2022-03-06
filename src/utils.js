@@ -1,15 +1,15 @@
 import { nanoid } from "nanoid";
 
-function shuffleArray(array) {
-  let randomArr = [...array].sort(() => Math.random() - 0.5);
-  let objArr = randomArr.map((item) => {
+function shuffleAnswers(possibleAnswers) {
+  let randomArr = [...possibleAnswers].sort(() => Math.random() - 0.5);
+  let randomAnswerList = randomArr.map((item) => {
     return {
       value: item,
       id: nanoid(5),
       isHeld: false,
     };
   });
-  return objArr;
+  return randomAnswerList;
 }
 
-export default shuffleArray;
+export default shuffleAnswers;

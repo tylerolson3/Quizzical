@@ -1,5 +1,5 @@
 import Question from "./Question";
-// import { nanoid } from "nanoid";
+import { nanoid } from "nanoid";
 
 function Game(props) {
   let displayQuestions = props.quizData.map((item) => (
@@ -8,7 +8,7 @@ function Game(props) {
         key={item.id}
         questionId={item.id}
         correctAnswer={item.correctAnswer}
-        question={item.question.replace(/&quot;/g, '"').replace(/&#039;/g, "'")}
+        question={item.question}
         answers={item.answers}
         quizData={props.quizData}
         setQuizData={props.setQuizData}
