@@ -5,10 +5,6 @@ function Question(props) {
   let listAnswers = props.answers.map((item) => (
     <Button
       isHeld={item.isHeld}
-      // value={item.value
-      //   .replace(/&amp;/g, "&")
-      //   .replace(/&#039;/g, "'")
-      //   .replace(/&quot;/g, '"')}
       value={he.decode(item.value)}
       item={item}
       quizData={props.quizData}
