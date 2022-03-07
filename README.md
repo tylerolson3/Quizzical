@@ -6,7 +6,6 @@ The Challenge:
 - Get quiz data from the Open Trivia Database API
 - Display quiz questions and possible answers
 - Tally correct answers after 'check answers' is clicked
-- Save draft invoices, and mark pending invoices as paid, & filter by status (draft/pending/paid)
 - Style answers based on whether it was correct/incrorect
 
 https://tylerolson3.github.io/Quizzical/ (update to netlify address)
