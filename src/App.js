@@ -68,16 +68,8 @@ function App() {
         };
       })
     );
-    // setScore(myScore);
     setHasCheckedAnswers(true);
-    // adjustScore();
-    // score state is returning twice the expected amount, so i accout for that here
   }
-
-  // function adjustScore() {
-  //   console.log("running adjust score!!", score);
-  //   setScore((prevScore) => prevScore / 2);
-  // }
 
   function heldAnswer(answerId, questionId) {
     setQuizData((prevQuestions) =>
@@ -136,7 +128,6 @@ function App() {
           key={nanoid()}
           hasCheckedAnswers={hasCheckedAnswers}
           setHasCheckedAnswers={setHasCheckedAnswers}
-          // playerAnswers={playerAnswers}
           heldAnswer={heldAnswer}
           checkQuestions={checkQuestions}
           score={score}

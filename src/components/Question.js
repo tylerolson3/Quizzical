@@ -19,7 +19,6 @@ function Question(props) {
   return (
     <div>
       <h3 className="question--question">{he.decode(props.question)}</h3>
-      {/* <h3 className="question--question">{props.question}</h3> */}
       {listAnswers}
     </div>
   );

@@ -46,5 +46,3 @@ function Game(props) {
 }
 
 export default Game;
-
-// https://pentdb.com/api.php?amount=5&category=24&difficulty=easy&type=multiple
