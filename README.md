@@ -74,10 +74,12 @@ You don't have to include this section but interviewers *love* that you can not 
 
 ### The dangers of *git push --force*
 
-- While working on this project, I implemented a **Git Feature Branch Workflow** where I never make changes to the main branch, and instead use feature branches to update my code.
+While working on this project, I implemented a **Git Feature Branch Workflow** where I never make changes to the main branch, and instead use feature branches to update my code.
 
--  I was getting a *non-fast-forward merge error* and couldn't figure it out, so I did  
--  ***git push --force orign main*** 
--  and somehow overwrote all the changes I had the previous few hours.  Whoops...
+I was getting a *non-fast-forward merge error* and couldn't figure it out, so I did:
+
+***git push --force orign main*** 
+
+and somehow this overwrote all the changes I had made over the previous few hours.  Whoops...
 
 
