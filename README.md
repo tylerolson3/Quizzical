@@ -48,7 +48,7 @@ const he = require("he");
 
 ### Formatting Data Once Received from the API
 
-- Since the API formatted the correct answer and incorrect answers as seperate values, I had to combine them into a single property array.  In order to avoid all questions having the same answer (e.g 1 = A, 2 = A, 3 = A, etc.) I had randomize the order of possibly answers.  I did this by creating a function that destructured all possible answers into a single array, and then randomized the order using .sort() & .random()
+- Since the API formatted the correct answer and incorrect answers as seperate values, I had to combine them into a single property.  In order to avoid all questions having the same answer (e.g 1 = A, 2 = A, 3 = A, etc.) I had randomize the order of possible answers.  I did this by creating a function that destructured correct & incorrect answers into a single array, and then randomized the order using .sort() & .random()
 
 ![Screen Shot 2022-03-06 at 4 36 35 PM](https://user-images.githubusercontent.com/67395239/156949520-668066d4-e459-4974-b8c0-2cf6cee07bbb.png)
 
